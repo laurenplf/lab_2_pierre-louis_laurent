@@ -15,9 +15,14 @@ public class MyCrossover extends AbstractCrossover<double[]> {
         ArrayList children = new ArrayList();
 
         // your implementation:
-
-//        children.add(p1);
-//        children.add(p2);
+        double[] child1 = new double[2];
+        double[] child2 = new double[2];
+        child1[0] = p1[0];
+        child1[1] = p2[1];
+        child2[0] = p2[0];
+        child2[1] = p1[1];
+        children.add(child1);
+        children.add(child2);
         return children;
     }
 }
