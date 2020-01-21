@@ -15,7 +15,10 @@ public class MyFactory extends AbstractCandidateFactory<double[]> {
     public double[] generateRandomCandidate(Random random) {
         double[] solution = new double[dimension];
         // x from -5.0 to 5.0
-
+        for (int i = 0 ; i < dimension ; i++){
+            solution[i] = (random.nextDouble()-0.5)*10;
+            System.out.println(solution[i]);
+        }
         // your implementation:
 
         return solution;
